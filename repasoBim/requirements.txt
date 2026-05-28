@@ -1,0 +1,6 @@
+streamlit
+sqlalchemy
+pandas
+couchdb
+pymysql
+psycopg2

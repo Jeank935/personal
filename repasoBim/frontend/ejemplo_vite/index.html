@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso Frontend - Plataformas Web</title>
+    
+    <!-- 
+    ======================================================================
+    REPASO FRONTEND: INTEGRACIÓN DE LIBRERÍAS
+    ======================================================================
+    Teoría:
+    Para evitar reinventar la rueda, a menudo integramos librerías externas 
+    (como jQuery o DataTables) usando CDNs (Content Delivery Networks) o 
+    empaquetadores como Vite.
+    -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    
+    <!-- Estilos locales básicos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Demostración Frontend Integrada</h1>
+        <p class="teoria-caja">
+            <strong>Concepto:</strong> Este HTML y JS complementan tu guía de estudio. 
+            Demuestran la manipulación del DOM y el uso de librerías de terceros (DataTables),
+            un patrón que se vio en carpetas como <code>vite-jquery-datatable</code>.
+        </p>
+        
+        <button id="btnCargar" class="btn">Cargar Datos Dinámicamente</button>
+        <br><br>
+        
+        <!-- Tabla estructural que será potenciada por DataTables -->
+        <table id="tablaEstudiantes" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Promedio</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los datos serán inyectados por JavaScript aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Carga de Scripts (jQuery y DataTables) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    
+    <!-- Lógica local de nuestra aplicación frontend -->
+    <script src="script.js"></script>
+</body>
+</html>
